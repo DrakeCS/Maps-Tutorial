@@ -10,6 +10,7 @@ Disclaimer: This tutorial is for Google Maps Android API v2 and works as of May 
 API or a creation of v3 can result in this guide becoming obsolete.
 
 *******Part 1: Setting up your API Key***********
+
 The first step is setting up your API Key through Google Developer. To do this, we must first get a piece of information known as the SHA-1 fingerprint. Note that there are two different keys: One for debugging and designing on your own device/computer & one for actually releasing into the Google Play Store.
 
 1. Launch a Terminal Window (Mac OS X/Linux) or Command Prompt Window (Windows).
@@ -57,6 +58,7 @@ From this output, copy the line SHA1: (without the SHA1:) to the clipboard.
 11. Click Create. An API key will appear. Copy it to the clipboard.
 
 ****Part 1a: Changing the API key for release******
+
 Replace step 3 with the following:
 
 keytool -list -v -keystore your_keystore_name -alias your_alias_name
@@ -64,6 +66,7 @@ keytool -list -v -keystore your_keystore_name -alias your_alias_name
 If you need to find your alias name, type the following into a Terminal/Command Prompt window: keytool -list -keystore your_keystore_name. Replace your_keystone_name with the path & name of the keystore, including the .keystore extension.
 
 ********Part 2: Eclipse Setup**********
+
 1. You MUST have the following Android SDK's installed:
 -Under Tools: Android SDK Tools
 -Under the API's you will be developing for: Google APIs
@@ -85,6 +88,7 @@ If you have issues, a troubleshooting tip I suggest is installing every single A
 8. Now you should have the google-play-services_lib in your Project Explorer.
 
 **********Part 3: Project Setup**********
+
 1. Go to File > New > Other.
 
 2. Select Android > Android Application Project.
